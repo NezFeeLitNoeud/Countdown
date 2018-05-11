@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>THE COUNTDOWN</title>
+</head>
+
+
+<body>
+
+
+			<!-- EN-TETE -->
+	<div class="header">
+		<div id="col1">
+
+		</div>
+
+		<div id="col2">
+			<h1>TIMER</h1>
+		</div>
+
+		<div id="col3">
+		</div>
+	</div>
+
+			<!-- AFFICHE DU TIMER -->
+
+	<div class="container">
+
+
+		<div class="changer">
+			<form name="switchTime">
+				<label>Heures</label>
+				<input type="number" name="heures" id="heures" min="0" max="24" placeholder="00">
+		<br>
+		<br>
+				<label>Minutes</label>
+				<input type="number" name="minutes" id="minutes" min="0" max="59" placeholder="00">
+		<br>
+		<br>
+				<label>Secondes</label>
+				<input type="number" name="secondes" id="secondes" min="0" max="59" placeholder="00">
+		<br>
+		<br>
+		<br>
+		<br>
+				<button type="button" id="start" onclick="startCountdown()" onmouseover="changeColor()" onmouseout="stopColor()" "> START </button>
+				<br>
+		<br>
+
+				<button type="reset" id="reset"> RESET </button>
+			</form>
+		
+		</div>
+
+
+		<div class="timer">
+			<p id="demo">0h 0m 0s</p>
+		</div>
+
+
+			
+
+		
+
+	</div>
+
+ <audio src="end.mp3" type="audio/mp3" id="end_timer"></audio>
+
+
+<script src="js.js"></script>
+
+</body>
+
+</html>

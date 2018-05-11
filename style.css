@@ -1,0 +1,118 @@
+html, body {
+width: 100%;
+padding: 0;
+margin: 0;
+
+}
+
+
+/* EN-TETE */
+
+
+
+.header {
+	position: relative;
+	border: 2px #cacacc solid;
+	width: 100%;
+	height: 150px;
+	display: flex;
+	flex-direction: row;
+}
+
+#col1 {
+	/*border: 3px green solid;*/
+	flex: 1;
+	flex-direction: column;
+	height: 100%;
+	background-color: #98414b;
+}
+
+#col2 {
+	/*border: 3px orange solid;*/
+	flex: 2;
+	flex-direction: column;
+	height: 100%;
+
+}
+
+#col3 {
+	/*border: 3px blue solid;*/
+	flex: 1;
+	flex-direction: column;
+	height: 100%;
+	background-color: #98414b;
+}
+ 
+
+
+ /* CONTENU */
+
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.timer {
+	flex: 3;
+	flex-direction: column;
+position: relative;
+
+height: 100%;
+width: 100%;
+margin: 0 auto;
+}
+
+.changer {
+	flex: 1;
+	flex-direction: column;
+	position: relative;
+
+height: 100%;
+width: 100%;
+padding-top: 200px;
+}
+
+
+
+h1 {
+	font-size: 70px;
+	text-align: center;
+	
+}
+
+#demo {
+
+font-size: 80px;
+
+padding-top: 13%;
+padding-left: 200px;
+
+}
+
+
+/* FORMULAIRE */
+
+
+label {
+	margin-left: 30%;
+	font-size: 30px;
+}
+
+input {
+	font-size: 25px;
+	border: none;
+	background-color: transparent;
+	text-align: center;
+}
+
+
+
+button {
+	font-size: 20px;
+margin-left: 130px;
+border: 1px black solid;
+}
+
+
