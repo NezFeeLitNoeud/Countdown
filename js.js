@@ -28,16 +28,22 @@ decompte --;
 
 
 var audio = document.getElementById("end_timer");
-audio.loop = false;
-        audio.load()
 
-reset.onclick=function(){clearInterval(x);}
+
+reset.onclick=function(){clearInterval(x);
+
+    var hreset = 0
+    var mreset = 0
+    var sreset = 0 
+    document.getElementById("demo").innerHTML = hreset + "h " + mreset + "m " + sreset + "s ";}
+
+
 
 if (decompte < 0) {
     
         document.getElementById("demo").innerHTML = "TIME'S UP !";
         audio.play();
-        
+
     }
 
 
@@ -77,3 +83,4 @@ function stopColor() {
 	document.getElementById("start").style.color = "black";
     document.getElementById("start").style.border = "1px black solid";
 }
+
